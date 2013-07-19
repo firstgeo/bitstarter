@@ -4,7 +4,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
 <<<<<<< HEAD
-  response.send('Hello to the World yayaya !!!!!');
+  response.send('Hello to the World from the github uh huh !!!!!');
   
 >>>>>>> 59b80af2fdf2f31e2e10cb319f57abe6b3516023
 });
