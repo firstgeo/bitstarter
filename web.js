@@ -1,9 +1,11 @@
 var express = require('express');
-var app = express();
-app.use(express.logger());
+
+var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World from updates in emacs!! Updated');
+  var fs = require('fs');
+  var data = fs.readFileSync('index.html');
+   respose.send(dataToString('utf-8'));
 });
 
 var port = process.env.PORT || 5000;
